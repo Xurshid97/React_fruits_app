@@ -22,7 +22,6 @@ img {
 }
 
 
-
 .card_right {
     display: flex;
     flex-direction: column;
@@ -33,6 +32,7 @@ img {
 .card_right__top {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
     justify-content: space-between;
 }
 
@@ -62,3 +62,13 @@ button:hover {
 .detail_top {
     color: rgba(0, 0, 0, 0.455);
 }
+
+@media screen and (max-width: 650px) {
+    .card {
+      flex-wrap: wrap;
+    }
+
+    .card_right__bottom {
+        flex-direction: column;
+    }
+  }
